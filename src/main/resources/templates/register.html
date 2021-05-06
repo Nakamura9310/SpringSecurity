@@ -21,18 +21,14 @@
 
                   <!-- Registration -->
                   <div class="text-center">
-
                     <h1 class="h4 text-gray-900 mb-4">
                       ユーザ登録
                     </h1>
-
                   </div>
 
                   <form th:action="@{/register}" th:object="${user}"
                     method="post" novalidate>
-
                     <div class="form-group">
-
                       <label for="name">
                         <span class="badge badge-danger">必須</span>
                         ユーザ名
@@ -42,7 +38,6 @@
                       <div class="invalid-feedback"
                         th:errors="*{username}">
                       </div>
-                      
                     </div>
 
                     <div class="form-group">
